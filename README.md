@@ -9,6 +9,7 @@
 
 Вот так выглядит следующий код с использованием QueryBuilder
 
+```java
 @PersistenceContext(unitName = "persistenceUnit")
 protected EntityManager em;
 
@@ -38,3 +39,4 @@ List<EfficiencyTemplate> result = new QueryBuilder(" select et from EfficiencyTe
     .append(" and et.product in (:products) ", "products", products)
     .buildQuery(em)
     .getResultList();
+```
