@@ -30,7 +30,11 @@ if (products != null && !products.isEmpty()) {
 }
 
 List<EfficiencyTemplate> result = query.getResultList();
+```
 
+превращается в
+
+```java
 @PersistenceContext(unitName = "persistenceUnit")
 protected EntityManager em;
 
